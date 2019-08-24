@@ -1,0 +1,13 @@
+{% extends 'posts/layout.html' %}
+
+{% block content %}
+<h1 class="c">{{post.title}}</h1>
+<div class="col- c">
+    <p>{{post.body}}</p>
+</div>
+<br><br>
+<i>{{post.created_at}}</i>
+<br><br>
+<a href="/posts">Go Back</a>
+
+{% endblock %}
